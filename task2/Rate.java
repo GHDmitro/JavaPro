@@ -99,6 +99,7 @@ public class Rate {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
+
         //!!!!!!!сдесь выбивает nullPointer т к нет данных но демаршелятор написан так же как и у всех
         //правда в xml файле тег <query> подчеркнут красным и подписан что компилятор не может найти такой тег
         //что мне стоит изменить ???

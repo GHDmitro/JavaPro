@@ -13,9 +13,8 @@ import java.util.Arrays;
  */
 public class Main {
     public static void main(String[] args) throws IOException, JAXBException {
-        String url = "http://query.yahooapis.com/v1/public/yql?format=xml&q=select%20*%20from%20yahoo." +
-                "finance.xchange%20where%20pair%20in%20(%22USDEUR%22,%20%22USDUAH%22)&env=store://datatables." +
-                "org/alltableswithkeys";
+        String url = "http://query.yahooapis.com/v1/public/yql?format=xml&q=select%20*%20from%20" +
+                "yahoo.finance.xchange%20where%20pair%20in%20(\"USDEUR\",%20\"USDUAH\")&env=store://datatables.org/alltableswithkeys";
 
 
         File file = new File("/Users/macbookair/IdeaProjects/JavaPro/yql.xml");
@@ -44,7 +43,7 @@ public class Main {
     private static String performData(String url) throws IOException {
         URL url1 = new URL(url);
         HttpURLConnection http = (HttpURLConnection) url1.openConnection();
-        FileWriter fr = new FileWriter("yql.xml");
+        FileWriter fr = new FileWriter("/Users/macbookair/IdeaProjects/JavaPro/yql.xml");
         StringBuilder sb = new StringBuilder();
 
         try {

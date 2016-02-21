@@ -16,7 +16,7 @@ public class Query {
 
     //для чего этот namespace, нужно ли его припысывать если и так работает???
     @XmlAttribute(namespace = "http://www.yahooapis.com/v1/base.rng")
-    public int count;
+    public String count;
     @XmlAttribute(namespace = "http://www.yahooapis.com/v1/base.rng")
     public String created;
     @XmlAttribute(namespace = "http://www.yahooapis.com/v1/base.rng")
